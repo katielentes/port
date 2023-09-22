@@ -42,10 +42,13 @@ const Navbar = () => {
           className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a>Item 1</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a>Item 2</a>
+            <Link href="/resume">Resume</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
@@ -55,15 +58,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link href="/projects">
-              {" "}
-              <a className={isLinkActive("/projects")}>Projects</a>
+              <div className={isLinkActive("/projects")}>Projects</div>
             </Link>
           </li>
           <li>
-            <a>Resume</a>
+            <Link href="/resume">
+              <div className={isLinkActive("/resume")}>Resume</div>
+            </Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link href="/contact">
+              <div className={isLinkActive("/contact")}>Contact</div>
+            </Link>
           </li>
         </ul>
       </div>
