@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { sendEmail } from "../../lib/sengrid";
 
 const ContactPage = () => {
   const [fullname, setFullname] = useState("");
@@ -34,7 +33,6 @@ const ContactPage = () => {
     }
 
     setErrors({ ...tempErrors });
-    console.log("errors", errors);
     return isValid;
   };
 
@@ -58,7 +56,6 @@ const ContactPage = () => {
           }),
           method: "POST",
         });
-        // const res = await sendEmail({ email, fullname, subject, message });
         if (res) {
           setShowSuccessMessage(true);
           setShowFailureMessage(false);
@@ -69,7 +66,6 @@ const ContactPage = () => {
           setButtonText("Send");
         }
       } catch (error) {
-        console.log("errorororo");
         setShowSuccessMessage(false);
         setShowFailureMessage(true);
         setButtonText("Send");
@@ -81,7 +77,6 @@ const ContactPage = () => {
         setMessage("");
       }
     }
-    console.log(fullname, email, subject, message);
   };
 
   return (
