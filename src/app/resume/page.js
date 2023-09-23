@@ -1,7 +1,7 @@
 const ResumePage = () => {
   return (
-    <div>
-      <h1>Resume</h1>
+    <div className="w-full max-w-[800px] mx-auto">
+      <embed src="./lentes-resume.pdf" width="800px" height="760px" />
     </div>
   );
 };

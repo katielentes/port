@@ -20,7 +20,6 @@ const Navbar = () => {
 
   // Helper function to determine if a link should be bold
   const isLinkActive = (href: string) => {
-    console.log(pathname);
     return pathname === href ? "font-bold" : "";
   };
 
