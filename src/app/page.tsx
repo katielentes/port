@@ -6,7 +6,7 @@ export default function Home() {
         I&apos;m a front-end software engineer in Chicago. I love javascript,
         css, learning, tinkering, and cycling.
       </p>
-      <p>Experience in retail, eccomerce, and non-profit.</p>
+      <p>Experience in retail, eccomerce, and nonprofit.</p>
     </article>
   );
 }
