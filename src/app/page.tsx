@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <article className="prose pt-8">
+    <article className="prose sm:pt-8">
       <h1>Hi, I&apos;m Katie</h1>
       <p>
         I&apos;m a front-end software engineer in Chicago. I love javascript,

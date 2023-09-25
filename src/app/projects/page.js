@@ -28,19 +28,17 @@ const ProjectsPage = () => {
   const currentPhoto = `/images/quickstep/receiving/IMG_02${currentPhotoIndex}.PNG`;
 
   return (
-    <div className="pt-8">
-      <div className="flex flex-start">
+    <div className="sm:pt-8">
+      <div className="flex flex-start flex-col sm:flex-row max-w-xl justify-center">
         <div className="mr-16">
           <h2 className="text-2xl font-bold mb-2">Foxtrot Market: </h2>
-          <p className="text-xl mb-2">Quickstep</p>
-          <p className="text-sm">
-            Inventory <br />
-            management app
-          </p>
+          <div className="flex flex-col  max-w-sm justify-between">
+            <p className="text-xl mb-2">Quickstep</p>
+            <p className="text-sm">Inventory management app</p>
+          </div>
         </div>
         <div
-          className="mockup-phone border-primary"
-          style={{ margin: 0 }}
+          className="mockup-phone border-primary ml-0 mx-auto ml-auto sm:m-auto mt-8 sm:mt-0"
           ref={artboardRef}
         >
           <div className="camera"></div>

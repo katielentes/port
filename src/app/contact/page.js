@@ -80,7 +80,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="pt-4 w-full flex justify-center">
+    <div className="sm:pt-8 w-full flex justify-center">
       <form
         onSubmit={handleSubmit}
         className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-base-200 w-[90%] max-w-[800px]"
