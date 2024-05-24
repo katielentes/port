@@ -1,8 +1,11 @@
 const Footer = () => {
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  }
   return (
     <footer className="flex footer p-10 bg-neutral text-neutral-content justify-between sticky top-[100vh]">
       <aside>
-        <p>© 2018-2023 — Katie Lentes</p>
+        <p>© 2018-{getCurrentYear()} — Katie Lentes</p>
       </aside>
       <nav>
         <div className="grid grid-flow-col gap-4">
